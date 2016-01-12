@@ -18,6 +18,15 @@ In Ubuntu run:
 $ sudo apt-get -y install git docker 
 ```
 
+In a Mac you should install the latest Docker toolbox available from here:
+https://www.docker.com/docker-toolbox
+
+Git can be installed using an Installer .dmg file or using brew with the following command:
+```bash
+$ brew install git 
+```
+
+
 ## Install
 To install this package run:
 
