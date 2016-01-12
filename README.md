@@ -26,7 +26,6 @@ Git can be installed using an Installer .dmg file or using brew with the followi
 $ brew install git 
 ```
 
-
 ## Install
 To install this package run:
 
@@ -52,6 +51,11 @@ docker.run([{
     // Do something with the error
 });
 ```
+
+## Small word of caution
+When using a Mac for your development, make sure to run your Node process from within a Docker enabled terminal
+Use your LaunchPad and launch a Docker terminal using the Docker Quickstart Terminal (which will open in your default console application)
+Otherwise the commands underneath this tool will not be able to use the docker command to send commands to the Docker VM.
 
 ## People
 
