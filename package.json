@@ -1,6 +1,6 @@
 {
   "name": "docker-runner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A utlity that simplifies the creation of Docker containers from Docker enabled GitHub / Bitbucket repositories using a few simple commands. interfaced cleanly with promises.",
   "main": "index.js",
   "scripts": {
