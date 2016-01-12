@@ -52,6 +52,23 @@ docker.run([{
 });
 ```
 
+Pay attention to the fact you are sending over an array of objects, you can send multiple objects with repositories
+, names of images and ports and the docker runner will automatically load all of them providing a resolved promise once done.
+
+To stop the container or containers you have run , when you want to finish using them (code wise) you can run the following
+command on the same instance of docker from the previous example:
+
+```javascript
+docker.stop()
+.then(function () {
+    // All containers have surely been killed by this point.
+}).catch(function (e) {
+    console.log('Could not stop the containers error attached');
+    console.log(e);
+});
+```
+
+
 ## Small word of caution
 When using a Mac for your development, make sure to run your Node process from within a Docker enabled terminal
 Use your LaunchPad and launch a Docker terminal using the Docker Quickstart Terminal (which will open in your default console application)
